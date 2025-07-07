@@ -1,88 +1,129 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  color: #222222;
-  text-align: center;
-  line-height: 1.6;
-}
-
-header {
-  background: #fff7e6;
-  padding: 40px 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.logo {
-  width: 120px;
-  margin-bottom: 20px;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  color: #777;
-  margin-top: -10px;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #d4af37;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-}
-
-.cta-button:hover {
-  background-color: #c49e2e;
-}
-
-section {
-  padding: 60px 20px;
-  max-width: 700px;
-  margin: auto;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.small {
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 10px;
-}
-
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ddd;
-} 20px;
-  max-width: 700px;
-  margin: auto;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.small {
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 10px;
-}
-
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ddd;
-}
+diff --git a/style.css b/style.css
+index d784db123fa2dd178055a2de05e193740e12e971..c042e22ee634f4fd902051aeaea8c90183d5d764 100644
+--- a/style.css
++++ b/style.css
+@@ -1,88 +1,101 @@
+ body {
+-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
++  font-family: 'Inter', sans-serif;
+   margin: 0;
+   padding: 0;
+-  background-color: #ffffff;
++  background-color: #fff7e6;
+   color: #222222;
+   text-align: center;
+   line-height: 1.6;
+ }
+ 
+ header {
+-  background: #fff7e6;
++  background: transparent;
+   padding: 40px 20px;
+   border-bottom: 1px solid #ddd;
+ }
+ 
+ .logo {
+-  width: 120px;
++  width: 200px;
++  height: auto;
+   margin-bottom: 20px;
+ }
+ 
+ .subtitle {
+   font-size: 1.2rem;
+   color: #777;
+   margin-top: -10px;
+ }
+ 
+ .cta-button {
+   display: inline-block;
+   margin-top: 20px;
+   padding: 10px 25px;
+   background-color: #d4af37;
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 8px;
+ }
+ 
+ .cta-button:hover {
+   background-color: #c49e2e;
+ }
+ 
+ section {
+   padding: 60px 20px;
+   max-width: 700px;
+   margin: auto;
+ }
+ 
+-h2 {
+-  font-size: 2rem;
++h1, h2 {
++  font-family: 'Playfair Display', serif;
+   margin-bottom: 20px;
+ }
+ 
+ .small {
+   font-size: 0.9rem;
+   color: #888;
+   margin-top: 10px;
+ }
+ 
+-footer {
+-  background-color: #f2f2f2;
+-  padding: 20px;
+-  font-size: 0.9rem;
+-  color: #666;
+-  border-top: 1px solid #ddd;
+-} 20px;
+-  max-width: 700px;
+-  margin: auto;
++.signup {
++  background-color: #fff7e6;
+ }
+ 
+-h2 {
+-  font-size: 2rem;
+-  margin-bottom: 20px;
++.signup form {
++  display: flex;
++  flex-direction: column;
++  align-items: center;
++  gap: 10px;
+ }
+ 
+-.small {
+-  font-size: 0.9rem;
+-  color: #888;
+-  margin-top: 10px;
++.signup input[type="email"] {
++  padding: 10px;
++  width: 100%;
++  max-width: 400px;
++  border: 1px solid #ccc;
++  border-radius: 4px;
++  font-family: inherit;
++}
++
++.signup button {
++  padding: 10px 25px;
++  background-color: #d4af37;
++  color: white;
++  border: none;
++  border-radius: 4px;
++  cursor: pointer;
++  font-weight: bold;
++}
++
++.signup button:hover {
++  background-color: #c49e2e;
+ }
+ 
+ footer {
+-  background-color: #f2f2f2;
++  background-color: #fff7e6;
+   padding: 20px;
+   font-size: 0.9rem;
+   color: #666;
+   border-top: 1px solid #ddd;
+ }
